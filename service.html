@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our MediCare Services </title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+        }
+
+        header {
+            background-color: #0096c7;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #0077b6;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background-color: #0096c7;
+            border-radius: 5px;
+        }
+
+        .services-container {
+            max-width: 1200px;
+            margin: 50px auto;
+            text-align: center;
+        }
+
+        .services-container h2 {
+            color: #0077b6;
+            font-size: 32px;
+            margin-bottom: 40px;
+        }
+
+        .service-box {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 30px;
+        }
+
+        .service-card {
+            background-color: white;
+            width: 30%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .service-card img {
+            width: 100%;
+            border-radius: 10px;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .service-card h3 {
+            margin: 20px 0 10px;
+            font-size: 24px;
+            color: #0096c7;
+        }
+
+        .service-card p {
+            color: #555;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #0077b6;
+            color: white;
+            padding: 20px;
+            margin-top: 50px;
+        }
+        
+        header img {
+            position: absolute;
+            left: 20px;
+            top: 10px;
+            height: 100px; /* Adjust image size */
+            }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .service-card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+    	<img src="images/ohs.jpg" alt="Healthcare Logo">
+        <h1>MediCare</h1>
+        <h2>Our Services</h2>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="Signin.html">Sign In</a>
+        <a href="Signup.html">Sign Up</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+
+    <div class="services-container">
+        <h2>What We Offer</h2>
+        <div class="service-box">
+            <div class="service-card">
+                <img src="images/cardiology.jpg" alt="Cardiology">
+                <h3>Cardiology</h3>
+                <p>Our cardiology department offers comprehensive care for heart conditions. From diagnostics to advanced treatments, we ensure the best care for your heart.</p>
+            </div>
+
+            <div class="service-card">
+                <img src="images/neurology.jpg" alt="Neurology">
+                <h3>Neurology</h3>
+                <p>We provide expert care in the treatment of neurological disorders. Our neurology team is equipped with state-of-the-art technology for accurate diagnosis and treatment.</p>
+            </div>
+
+            <div class="service-card">
+                <img src="images/pediatrics.jpg" alt="Pediatrics">
+                <h3>Pediatrics</h3>
+                <p>Our pediatric department offers specialized care for children from birth to adolescence. We provide a safe and friendly environment for the youngest patients.</p>
+            </div>
+
+            <div class="service-card">
+                <img src="images/orthopedics.jpg" alt="Orthopedics">
+                <h3>Orthopedics</h3>
+                <p>Our orthopedic specialists are here to help with bone, joint, and muscle issues. From sports injuries to joint replacements, we offer top-notch care.</p>
+            </div>
+
+            <div class="service-card">
+                <img src="images/maternity.jpg" alt="Maternity">
+                <h3>Maternity</h3>
+                <p>Our maternity services provide care for expecting mothers, from prenatal care to childbirth and postpartum support, ensuring a safe and comfortable experience.</p>
+            </div>
+
+            <div class="service-card">
+                <img src="images/dentistry.jpg" alt="Dentistry">
+                <h3>Dentistry</h3>
+                <p>Our dental services offer comprehensive oral care for the entire family, including routine check-ups, cleanings, and advanced dental procedures.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2024 MediCare. All rights reserved.
+    </footer>
+</body>
+
+</html>

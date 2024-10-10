@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - MediCare</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+        }
+
+        header {
+            background-color:  #B3C100;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #0077b6;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background-color: #005f73;
+            border-radius: 5px;
+        }
+
+        .about-container {
+            max-width: 1000px;
+            margin: 50px auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .about-container h2 {
+            color: #0077b6;
+            margin-bottom: 20px;
+        }
+
+        .about-container p {
+            color: #333;
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .about-container h3 {
+            color: #005f73;
+            margin-top: 30px;
+        }
+
+        .team {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 40px;
+        }
+
+        .team-member {
+            flex: 1;
+            margin: 0 20px;
+            background-color: #e0f7fa;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .team-member img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+
+        .team-member h4 {
+            color: #005f73;
+            margin-bottom: 5px;
+        }
+
+        .team-member p {
+            color: #333;
+            font-size: 14px;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #005f73;
+            color: white;
+            padding: 20px;
+            margin-top: 50px;
+        }
+        header img {
+            position: absolute;
+            left: 20px;
+            top: 10px;
+            height: 100px; /* Adjust image size */
+}
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .team {
+                flex-direction: column;
+            }
+
+            .team-member {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+    	<img src="images/ohs.jpg" alt="Healthcare Logo">
+        <h1>MediCare</h1>
+        <h2>About Us</h2>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="Signin.html">Sign In</a>
+        <a href="Signup.html">Sign Up</a>
+        <a href="service.html">Services</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+
+    <div class="about-container">
+        <h2>Who We Are</h2>
+        <p>Welcome to our Healthcare System. We are a team of dedicated professionals committed to delivering exceptional healthcare services. Our mission is to provide comprehensive medical care to patients, ensuring they receive the best possible treatment in the comfort of their homes.</p>
+        <p>With years of experience, advanced technology, and a patient-centric approach, we are proud to serve our community by promoting health and wellness. From virtual appointments to online prescriptions, we provide modern healthcare solutions tailored to your needs.</p>
+
+        <h3>Our Team</h3>
+        <div class="team">
+            <div class="team-member">
+                <img src="img/doctor1.jpg" alt="Doctor John">
+                <h4>Dr. John Doe</h4>
+                <p>Chief Medical Officer</p>
+            </div>
+
+            <div class="team-member">
+                <img src="img/doctor2.jpg" alt="Doctor Sarah">
+                <h4>Dr. Sarah Smith</h4>
+                <p>Head of Surgery</p>
+            </div>
+
+            <div class="team-member">
+                <img src="img/doctor3.jpg" alt="Doctor Emily">
+                <h4>Dr. Emily Johnson</h4>
+                <p>Pediatrician</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2024 MediCare. All rights reserved.
+    </footer>
+</body>
+
+</html>
